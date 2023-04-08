@@ -1,5 +1,5 @@
 :root {
-  --header-height: 120px;
+  --header-height: 200px;
   --text-margin: 10vh;
   --body-margin: 1.25vw;
   --footer-height: 32px;
@@ -57,9 +57,9 @@ li {
 
 h1, .mobile-menu {
 
-          font-size: var(--large-text) !important;
-          font-weight: lighter;
-          font-family: var(--main-title-font);
+  font-size: var(--large-text) !important;
+  font-weight: lighter;
+  font-family: var(--main-title-font);
 }
 
 h2, .mobile-menu-content h2 a {
@@ -145,7 +145,7 @@ a {
         max-height: calc(var(--header-height) - calc(var(--body-margin)));
         height: var(--header-height);
         width: auto;
-        float: right;
+        float: inline-start;
       }
 
       .def-div {
@@ -191,7 +191,13 @@ a {
   height: 0px;
   overflow: hidden;
   }
-
+  .hide-desk {
+    display: none;
+  }
+  .hide-mobile {
+    display:  block;
+  }
+  
 
 
 @media all and (orientation: landscape) {
@@ -204,8 +210,21 @@ a {
 
 @media (max-width: 768px) {
 
+.hide-desk {
+    display: block;
+  }
 
-  ul.nav {
+.hide-mobile {
+    display: none;
+  }
+
+      :root {
+          --text-margin: 10vh;
+          --body-margin: 1.25vw;
+          --program-margin: 1.5vw;
+        }
+  
+        ul.nav {
     display: none;
   }
    
@@ -242,6 +261,7 @@ a {
       float: right;
       position: absolute;
       right: var(--body-margin);
+      width: auto;
       height: calc(100% - var(--footer-height) - var(--body-margin)/2);
     }
 
@@ -282,6 +302,22 @@ a {
     .mobile-menu-content a:hover {
       opacity: .6;
     }
+
+    .definition {
+      visibility: hidden;
+      display: none;
+      height: 0px;
+    }
+
+    .definition-marquee {
+      display: block;
+      visibility: visible;
+      background: #ffffff;
+      color: #460c0c;
+      height: calc(var(--footer-height) - var(--body-margin)/2);
+      line-height: calc(var(--footer-height) - var(--body-margin)/2);
+    }
+
 
   }
 
