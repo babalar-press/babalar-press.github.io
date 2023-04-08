@@ -3,6 +3,27 @@
   --text-margin: 10vh;
   --body-margin: 1.25vw;
   --footer-height: 32px;
+
+  --small-text: var(--main-small-text);
+  --small-line-height: var(--main-small-line-height);
+  --medium-text: var(--main-medium-text);
+  --medium-line-height: var(--main-medium-line-height);
+  --large-text: var(--main-large-text);
+  --large-line-height: var(--main-large-line-height);
+
+  /* default font */
+  --main-small-text: calc(14px + 0.1vw);
+  --main-small-line-height: 1;
+  --main-medium-text: calc(20px + 0.34vw);
+  --main-medium-line-height: 1.1;
+  --main-large-text: calc(24px + 2vw);
+  --main-large-line-height: 1;
+
+  --main-title-font: 'Cormorant Infant', sans-serif;
+  --main-header-font: 'Cormorant Infant', sans-serif;
+  --main-body-font: 'Montserrat Alternates', sans-serif;
+  --main-special-font: courier, 'Courier', sans-serif;
+
 }
 
 html {
@@ -18,23 +39,28 @@ html {
 
 body {
     background-color:rgb(255, 255, 255);
-    
+    margin: 0;
+    font: var(--main-title-font);
+    color: inherit;
 }
 
-h1 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 4rem;
-  color:rgb(179,69,47);
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+    margin: 0;
 }
 
-h2 {
-  font-size: 1rem;
-  font-family: 'Cormorant Infant', serif;
-  color:rgb(179,69,47);
-  text-align: left;
-}
+h1, .mobile-menu {
 
+          font-size: var(--large-text) !important;
+          font-weight: lighter;
+          font-family: var(--main-title-font);
+}
 
 h2, .mobile-menu-content h2 a {
   font-size: 1rem;
@@ -71,6 +97,7 @@ a {
   z-index: 10000;
   background: rgb(255, 255, 255);
   color: rgb(179,69,47);
+  font-family: var(--main-header-font);
   font-weight: normal;
   font-size: var(--small-text);
   line-height: 1.25;
@@ -100,7 +127,7 @@ a {
 
 
       #header .grid-4 .nav a {
-        color: #dd0f0f;
+        color: rgb(179,69,47);
         text-decoration: none;
         line-height: 1.4;
       }
@@ -123,10 +150,10 @@ a {
 
       .def-div {
         cursor: pointer;
-          transition: all .2s ease-in-out;
-          -moz-transition: all .2s ease-in-out;
-          -ms-transition: all .2s ease-in-out;
-          -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
       }
 
       .def-div:hover {
@@ -246,7 +273,7 @@ a {
       font-weight: lighter;
     }
     .mobile-menu-content a{
-      color: #fff;
+      color: #691010;
       text-decoration: none;
       margin: calc(var(--body-margin)*6);
       line-height: 1.5;
