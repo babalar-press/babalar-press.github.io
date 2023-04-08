@@ -1,5 +1,24 @@
+:root {
+  --header-height: 120px;
+  --text-margin: 10vh;
+  --body-margin: 1.25vw;
+  --footer-height: 32px;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
     background-color:rgb(255, 255, 255);
+    
 }
 
 h1 {
@@ -10,6 +29,14 @@ h1 {
 }
 
 h2 {
+  font-size: 1rem;
+  font-family: 'Cormorant Infant', serif;
+  color:rgb(179,69,47);
+  text-align: left;
+}
+
+
+h2, .mobile-menu-content h2 a {
   font-size: 1rem;
   font-family: 'Cormorant Infant', serif;
   color:rgb(179,69,47);
