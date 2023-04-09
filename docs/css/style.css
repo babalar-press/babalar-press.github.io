@@ -12,7 +12,7 @@
   --large-line-height: var(--main-large-line-height);
 
   /* default font */
-  --main-small-text: calc(14px + 0.1vw);
+  --main-small-text: calc(16px + 0.1vw);
   --main-small-line-height: 1;
   --main-medium-text: calc(20px + 0.34vw);
   --main-medium-line-height: 1.1;
@@ -191,14 +191,14 @@ a {
         pointer-events: none;
       }
 
+      .mobile-menu, .mobile-menu-content {
+        display: none;
+      }
+
       .logo:hover, .mobile-menu:hover {
         opacity: .6;
       }
 
-
-      .mobile-menu, .mobile-menu-content {
-        display: none;
-      }
 
       .mobile-menu-content {
         opacity: 0;
@@ -285,7 +285,7 @@ a {
       position: absolute;
       right: var(--body-margin);
       width: auto;
-      height: calc(100% - var(--footer-height) - var(--body-margin)/2);
+      height: 80px;
     }
 
     .mobile-menu {
@@ -297,16 +297,16 @@ a {
       opacity: 1;
       display: flex;
       position: fixed;
-      left: var(--body-margin);
-      top: var(--header-height);
-      height: 20%;
+      left: 0px; /*var(--body-margin);*/
+      top: 80px;
+      height: 10%;
       z-index: 999999999999;
       width: calc(100% - var(--body-margin)*2);
       text-align: left;
       flex-direction: row;
       flex-wrap: wrap;
       align-content: stretch;
-      justify-content: center;
+      justify-content: left;
       align-items: stretch;
     }
 
@@ -318,7 +318,7 @@ a {
     .mobile-menu-content a{
       color: #691010;
       text-decoration: none;
-      margin: calc(var(--body-margin)*6);
+      margin: calc(var(--body-margin)*1.8);
       line-height: 1.5;
     }
 
@@ -357,10 +357,11 @@ a {
   border: 1px solid rgb(179,69,47);
   margin: 1.5rem;
   padding: 1.5rem;
+  padding-top: calc(var(--header-height)*1.2);
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1000));
-  grid-template-rows: repeat(auto-fit, minmax(230px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(20px,1fr));
   grid-gap: 1rem;
 }
 

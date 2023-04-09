@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     
     <!--font-h2-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,31 +14,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Montserrat+Alternates:wght@100;300;400&display=swap" rel="stylesheet">  
+  
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+          console.log( "document loaded" );
+      });
+   
+      $( window ).on( "load", function() {
+          console.log( "window loaded" );
+      });
+      </script>
+  
   </head>
   
   <body>
+
+    <div id="header">
+  
+      <div class="definition-marquee">
+        <marquee id="marquee-definition">BABALAR PRESS – бұл бабаларымыздан қалған білімді зерттеп, түсіну және (қайта) қарауға бағытталған қазақ эксперименттік зерттеу, жазу және басылым бастамасы.</marquee>
+      </div>
+  
+  
+      <div class="grid-2">
+        <div class="grid-2 def-div">
+          <span id="definition" class="definition">BABALAR PRESS – бұл бабаларымыздан қалған білімді зерттеп, түсіну және (қайта) қарауға бағытталған қазақ эксперименттік зерттеу, жазу және басылым бастамасы.</span>
+          <nav class="mobile-menu">menu</nav>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="grid-4">
+          <ul class="nav">
+            <li><a id="link-about" href="about-us.html">about us</a></li>
+          </ul>
+        </div>
+        <div class="grid-4">
+          <ul class="nav">
+            <li><a id="" href="mailto:babalarpress@gmail.com">email</a></li>
+            <li><a id="" href="https://www.instagram.com/babalarpress/" target="_blank">ig</a> 
+            </li>
+          </ul>
+        </div>
+        <div class="grid-4">
+          <div class="nav logo">
+            <a href="index.html"><img src="img/babalar-press-logo.svg"></a>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+  <div class="mobile-menu-content">
+  
+      <h2><a id="link-about" href="about-us.html">about us</a></h2>
+      <h2><a id="" href="mailto:babalarpress@gmail.com">email</a></h2>
+      <h2><a id="" href="https://www.instagram.com/babalarpress/" target="_blank">ig</a></h2>
+    
+    </div>
+  
    <!--About-us-->
+   
     <h2>WHAT? | ЧТО? | НЕ?</h2>
     <section class="grid">
       <div class="grid_container2"> 
-        <div class="item item1">
+        <div class="item1">
           <p>BABALAR PRESS is a Qazaq experimental research, writing and publishing initiative for relearning, reclaiming and reimagining our ancestral knowledge(s).
           Through zines, workshops and research fellowships, BABALAR PRESS creates informal & caring spaces for us to engage with, reinterpret & share the stories, knowledges and practices of our collective and personal babalar (qazaq for “ancestors”).</p>
         </div>
 
-        <div class="item item2">
+        <div class="item2">
           <p>BABALAR PRESS – бұл бабаларымыздан қалған білімді зерттеп, түсіну және (қайта) қарауға бағытталған қазақ эксперименттік зерттеу, жазу және басылым бастамасы. 
           Зин, воркшоп және зерттеу гранттары арқылы, BABALAR PRESS бейресми және қамқор кеңістік кұрады. Бұл кеңістікте біз бабаларымыздан қалған ілімді танып, оған жаңа көзқараспен қарап, бәрімізге ортақ және жеке әңгіме, білім және тәжірибелерімізді еркін бөлісе аламыз.</p>
         </div>
 
-        <div class="item item3"><p>BABALAR PRESS — это казахстанская экспериментальная исследовательская, писательская и издательская инициатива для (пере)осмысления и возвращения себе знаний наших предков.
+        <div class="item3"><p>BABALAR PRESS — это казахстанская экспериментальная исследовательская, писательская и издательская инициатива для (пере)осмысления и возвращения себе знаний наших предков.
           С помощью зинов, воркшопов и стипендиальных программ, BABALAR PRESS создает неформальные и заботливые пространства, в которых мы можем изучать, по-новому интерпретировать и делиться историями, знаниями и практиками наших общих и личных бабалар (каз. “предки”).</p>
         </div>
 
-    </div> 
+    </div>
   </section>
   
-  <img src="section-divider.svg" alt="section-divider" />  
+  <img src="img/section-divider.svg" alt="section-divider" />  
 
   <h2>WHY? WHAT FOR? | ЗАЧЕМ? ДЛЯ ЧЕГО? | НЕ ҮШІН?</h2>
 
@@ -67,6 +124,8 @@
 
   </div> 
 </section>
+
+<script src="js/sketch.js"></script>
 
   </body>
 </html>
