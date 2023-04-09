@@ -1,15 +1,5 @@
-// CHECK MOBILE
-let mobileBrowser = checkMobile()
-let loadText = "";
-let loadTextArray = [];
 
-// MOBILE WINDOW SIZE RESET
 
-function resetHeight() {
-    document.body.style.height = window.innerHeight + "px";
-}
-window.addEventListener("resize", resetHeight);
-resetHeight();
 
 
 // RANDOM POETIC COMPUTATION
@@ -40,14 +30,14 @@ resetHeight();
 // MOBILE MENU
 
     $(".mobile-menu").click(function() {
-        $(".mobile-menu-content").toggleClass('mobile-menu-content-show');
+        $(".mobile-menu-content").toggleClass("mobile-menu-content-show");
 
         if ($(".mobile-menu").text() == "menu") {
             $(".mobile-menu").text("close");
         } else {
             $(".mobile-menu").text("menu");
         }
-        ;
+        
 
     });
 

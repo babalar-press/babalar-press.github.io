@@ -171,8 +171,8 @@ a {
         cursor: pointer;
         transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
-        ms-transition: all .2s ease-in-out;
-        o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
       }
 
       .def-div:hover {
@@ -182,8 +182,8 @@ a {
       .logo, .mobile-menu {
         transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
-        ms-transition: all .2s ease-in-out;
-        o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
       }
 
       .mobile-menu.hide-menu {
@@ -204,8 +204,8 @@ a {
         opacity: 0;
         transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
-        ms-transition: all .2s ease-in-out;
-        o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
         display: flex;
         height: 0px;
         overflow: hidden;
@@ -238,6 +238,8 @@ a {
 .hide-mobile {
     display: none;
   }
+
+  
 
       :root {
           --text-margin: 10vh;
@@ -346,42 +348,7 @@ a {
 
 /*homepage*/ 
 
-.content-box {
-  border-radius: 15px;
-  border: 1px solid rgb(179,69,47);
-  margin: 1.5rem;
-  padding: 1.5rem;
-  display: block;
-  background-size: cover;
-  width: 80%;
-  background-image: url("IMG_1243.JPG");
-  background-color: rgb(255, 255, 255);
-}
 
-
-/*.grid_container1 {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(255, 255, 255);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 30%));
-  grid-template-rows: repeat(auto-fit, minmax(230px,1fr));
-  grid-gap: 1.5rem;
-}
-
-.box1 {
-  background-image: url(background.svg);
-  background-size: cover;
-}
-
-.box2 {
-  border-radius: 15px;
-  border: 1px solid rgb(179,69,47);
-  margin: 1.5rem;
-  padding: 1.5rem;
-  background-image: url("white-wool-glitch1.png");
-  background-repeat: no-repeat;
-}*/
 
 /*about-us*/
 
