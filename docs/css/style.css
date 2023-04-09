@@ -1,5 +1,5 @@
 :root {
-  --header-height: 200px;
+  --header-height: 180px;
   --text-margin: 10vh;
   --body-margin: 1.25vw;
   --footer-height: 32px;
@@ -38,10 +38,24 @@ html {
 }
 
 body {
-    background-color:rgb(255, 255, 255);
     margin: 0;
     font: var(--main-title-font);
-    color: inherit;
+    /*color: inherit;*/
+}
+
+#website-grid {
+  display: grid;
+  padding-top: calc(var(--header-height)*1.2);
+}
+
+.grid-1 {
+  border: 1px solid rgb(179,69,47);
+  border-radius: 10px;
+  margin: 1rem;
+  float: center;
+  width: 100%;
+  position: fixed;
+  height: calc(var(--body-margin))- calc(var(--footer-height));
 }
 
 h1,
@@ -102,11 +116,10 @@ a {
 }
 
 
-
 /*homepage*/ 
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -114,7 +127,7 @@ a {
   justify-content: space-between;
   padding: calc(var(--body-margin)/2) var(--body-margin);
   z-index: 10000;
-  background: rgb(255, 255, 255);
+  background: none;
   color: rgb(179,69,47);
   font-family: var(--main-header-font);
   font-weight: normal;
@@ -299,7 +312,7 @@ a {
       position: fixed;
       left: 0px; /*var(--body-margin);*/
       top: 80px;
-      height: 10%;
+      height: 20%;
       z-index: 999999999999;
       width: calc(100% - var(--body-margin)*2);
       text-align: left;
@@ -335,8 +348,8 @@ a {
     .definition-marquee {
       display: block;
       visibility: visible;
-      background: #ffffff;
-      color: #460c0c;
+      background: none;
+      color: rgb(179,69,47);
       height: calc(var(--footer-height) - var(--body-margin)/2);
       line-height: calc(var(--footer-height) - var(--body-margin)/2);
     }
@@ -353,8 +366,8 @@ a {
 /*about-us*/
 
 .grid_container2 {
-  border-radius: 15px;
-  border: 1px solid rgb(179,69,47);
+  /*border-radius: 15px;
+  border: 1px solid rgb(179,69,47);*/ 
   margin: 1.5rem;
   padding: 1.5rem;
   padding-top: calc(var(--header-height)*1.2);
@@ -364,6 +377,7 @@ a {
   grid-template-rows: repeat(auto-fit, minmax(20px,1fr));
   grid-gap: 1rem;
 }
+
 
 .item1 {
   background-color: rgb(255, 255, 255);
@@ -378,8 +392,8 @@ a {
 }
 
 .grid_container3 {
-  border-radius: 15px;
-  border: 1px solid rgb(179,69,47);
+  /*border-radius: 15px;
+  border: 1px solid rgb(179,69,47);*/
   margin: 1.5rem;
   padding: 1.5rem;
   background-color: rgb(255, 255, 255);

@@ -5,7 +5,7 @@
 // RANDOM POETIC COMPUTATION
 
     var babalarpress = [
-        "BABALAR PRESS is a Qazaq experimental publishing initiative for relearning, reclaiming and reimagining our ancestral knowledge(s).", "BABALAR PRESS – бұл бабаларымыздан қалған білімді зерттеп, түсіну және (қайта) қарауға бағытталған қазақ эксперименттік зерттеу, жазу және басылым бастамасы.", "BABALAR PRESS — это казахстанская экспериментальная исследовательская, писательская и издательская инициатива для (пере)осмысления и возвращения себе знаний наших предков."
+        "BABALAR PRESS is a Qazaq experimental publishing initiative for relearning, reclaiming and reimagining our ancestral knowledge(s).", "BABALAR PRESS – бұл бабаларымыздан қалған білімді зерттеп, түсіну және (қайта) қарауға бағытталған қазақ эксперименттік басылым бастамасы.", "BABALAR PRESS — это казахстанская экспериментальная издательская инициатива для (пере)осмысления и возвращения себе знаний наших предков."
         ];
     
         randDef = babalarpress[Math.floor(Math.random() * babalarpress.length)];
