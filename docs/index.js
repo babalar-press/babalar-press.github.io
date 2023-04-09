@@ -27,6 +27,13 @@ resetHeight();
         $(".def-div").click(function() {
             $('#definition').text(babalarpress[Math.floor(Math.random() * babalarpress.length)]);
         });
+
+
+    $(".expand-intro").click(function() {
+        $(".expanded-intro").removeClass('hide-expanded');
+        $(".expand-intro").addClass('hide-expanded');
+        $(".expand-intro-dots").addClass('hide-expanded');
+    });
     
     
 
@@ -35,10 +42,10 @@ resetHeight();
     $(".mobile-menu").click(function() {
         $(".mobile-menu-content").toggleClass('mobile-menu-content-show');
 
-        if ($(".mobile-menu").text() == "Menu") {
-            $(".mobile-menu").text("Close");
+        if ($(".mobile-menu").text() == "menu") {
+            $(".mobile-menu").text("close");
         } else {
-            $(".mobile-menu").text("Menu");
+            $(".mobile-menu").text("menu");
         }
         ;
 
